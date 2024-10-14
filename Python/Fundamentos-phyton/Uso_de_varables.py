@@ -1,5 +1,5 @@
-# Alberto Martínez Barbosa
-# 7 de septiembre de 2024
+# Luna Hernández Diana Belen
+# 09 de octubre del 2024
 # En este archivo se ejemplifica el uso de variables en Python.
 
 # Notas:
@@ -13,9 +13,9 @@ semestre = 4        # la variable ya no apunta al objeto anterior, sino a uno nu
 print(semestre)
 
 # Se crean varias variables para ejemplificar su uso
-nombre = "Alberto"  # variable de tipo String
-altura = 1.65       # variable de tipo Float
-edad = 31           # variable de tipo Int
+nombre = "Diana"  # variable de tipo String
+altura = 1.63       # variable de tipo Float
+edad = 23           # variable de tipo Int
 
 # Se imprimen las variables, añadiendo información adicional para comprender lo que se imprime
 print("Nombre:", nombre)
@@ -24,8 +24,8 @@ print("Altura: ", altura, "m.")
 print("Edad: ", edad, "años.")
 
 # Se modifican los valores de las variables y se mandan a imprimir
-altura = 1.66
-edad = 30
+altura = 1.64
+edad = 24
 print()
 print("Valores modificados:")
 print("Nombre:", nombre)
@@ -34,7 +34,7 @@ print("Altura: ", altura, "m.")
 print("Edad: ", edad, "años.")
 
 # En Python, las variables son dinámicas, por lo que pueden almacenar otro tipo de dato en cualquier momento
-edad = "treinta y uno"      # edad antes tenía el valor de 31 (Int)
+edad = "veintitrés"      # edad antes tenía el valor de 31 (Int)
 print()
 print("Edad (con otro tipo de dato):", edad)
 
@@ -50,19 +50,19 @@ print("Edad (con otro tipo de dato):", edad)
 # - Utilizar nombres descriptivos de acuerdo a su uso. Por ejemplo: edad, en lugar de e.
 
 # Ejemplos correctos y con buenas prácticas
-fecha_nacimiento = "1 de enero del 2000"
+fecha_nacimiento = "16 de febrero del 2001"
 clase = "Paradigmas de programación II"
 horas_estudio = 8
-nombre = "Alberto"
+nombre = "Diana"
 es_estudiante = True
 
 # Ejemplos incorrectos (líneas comentadas porque marcan error) o de malas prácticas
-f = "1 de enero del 2000"
+f = "16 de febrero del 2001"
 fechanacimiento = "1 de enero del 2000"
 # class = "Paradigmas de programación II"
 # 8horas_estudio = 8
-Nombre = "A l b e r t o"
-NOMBRE = "ALBERTO"
+Nombre = "Diana"
+NOMBRE = "DIANA"
 
 # Notar que las variables 'nombre', 'Nombre' y 'NOMBRE', son distintas
 print()
