@@ -1,6 +1,6 @@
 '''
 Nombre: Diana Belen Luna Hernández
-Fecha: 17 de Octubre del 2024.
+Fecha: 10 de Octubre del 2024.
 Descripción: Conversión de cadenas a int, float y boolean mediante la interacción con consola.
 '''
 
