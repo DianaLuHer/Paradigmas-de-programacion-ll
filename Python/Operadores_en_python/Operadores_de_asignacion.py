@@ -1,43 +1,44 @@
 """
-Diana Belen Luna Hernández
-17/10/2024
+Nombre: Diana Belen Luna Hernández
+Fecha: 17/10/24
+Descripción: Programa que realiza varias operaciones de asignación.
 """
 
-#asignacion multiple
-n1,n2=7,10
-print(n1)
-print(n2)
+# Asignación múltiple: se asignan valores a las variables n1 y n2
+num1, num2 = 7, 10
+print(num1)  # Imprime el valor de n1
+print(num2)  # Imprime el valor de n2
 
-n3,cad,n4=11,"Hola",9
+# Se asignan múltiples valores a diferentes variables
+num3, cad, num4 = 11, "Hola", 9
 print("")
-print(n3)
-print(cad)
-print(n4)
+print(num3)  # Imprime el valor de n3
+print(cad)  # Imprime el valor de la cadena cad
+print(num4)  # Imprime el valor de n4
 
-suma,resta=n1+n2,n3-n4
+# Se calcula la suma y la resta de los valores asignados
+suma, resta = num1 + num2, num3 - num4
 print("")
-print(suma)
-print(resta)
+print(suma)  # Imprime el resultado de la suma
+print(resta)  # Imprime el resultado de la resta
 
-#Asignación encadenada
-n5=n6=n7=12
-print("")
-print(n5)
-print(n6)
-print(n7)
+# Asignación encadenada: se asigna el mismo valor a n5, n6 y n7
+num5 = num6 = num7 = 12
+print("")  # Imprime una línea en blanco
+print(num5)  # Imprime el valor de n5
+print(num6)  # Imprime el valor de n6
+print(num7)  # Imprime el valor de n7
 
-#intercambio de variables
+# Intercambio de variables
 print("Intercambio de variables")
-n8=int(input("Ingresa un número entero: "))
-print("")
-n9=int(input("Ingresa un número entero: "))
+num8 = int(input("Ingresa un número entero: "))  # Se solicita un número entero y se asigna a n8
+print("")  # Imprime una línea en blanco
+num9 = int(input("Ingresa un número entero: "))  # Se solicita otro número entero y se asigna a n9
 
-print(n8,n9)
+print(num8, num9)  # Imprime los valores de n8 y n9
 
-n9,n8=n8,n9
+# Se intercambian los valores de n8 y n9
+num9, num8 = num8, num9
 
-print(n8,n9)
-
-#Multiples valores de entrada
-print("Multiple valores de entrada")
-n10,n11=int(input("Ingrese el primer número: ")),int(input("Ingrese el segundo número: "))
+# Imprime los valores intercambiados
+print(num8, num9)
