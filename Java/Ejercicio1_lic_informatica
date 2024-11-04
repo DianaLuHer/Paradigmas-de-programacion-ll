@@ -1,0 +1,19 @@
+String inputText = ingresar.getText(); // Usar el nuevo nombre
+                try {
+                    int n = Integer.parseInt(inputText);
+                    StringBuilder result = new StringBuilder();
+
+                    for (int i = 1; i <= n; i++) {
+                        if (i % 3 == 0) {
+                            result.append("Licenciatura");
+                        } else if (i % 5 == 0) {
+                            result.append("Informática");
+                        } else {
+                            result.append(i);
+                        }
+                        result.append(i < n ? ", " : ""); // Añadir coma si no es el último número
+                    }
+                    resultado.setText(result.toString()); // Usar el nuevo nombre
+                } catch (NumberFormatException ex) {
+                    resultado.setText("Por favor, ingresa un número válido."); // Usar el nuevo nombre
+                }
