@@ -1,0 +1,26 @@
+ try {
+                    double result = 0;
+                    if (areaRect.isSelected()) {
+                        double baserect = Double.parseDouble(base.getText());
+                        double alturarect = Double.parseDouble(altura.getText());
+                        result = baserect * alturarect;
+                        resultado.setText("Área del rectángulo: " + String.format("%.3f", result));
+                    } else if (periRect.isSelected()) {
+                        double baserect = Double.parseDouble(base.getText());
+                        double alturarect = Double.parseDouble(altura.getText());
+                        result = (2 * baserect) + (2 * alturarect);
+                        resultado.setText("Perímetro del rectángulo: " + String.format("%.3f", result));
+                    } else if (areaCir.isSelected()) {
+                        double radioCir = Double.parseDouble(radio.getText());
+                        result = 3.1416 * Math.pow(radioCir, 2);
+                        resultado.setText("Área del círculo: " + String.format("%.3f", result));
+                    } else if (periCir.isSelected()) {
+                        double radioCir = Double.parseDouble(radio.getText());
+                        result = 2 * 3.1416 * radioCir; // Usar radio para calcular el perímetro
+                        resultado.setText("Perímetro del círculo: " + String.format("%.3f", result));
+                    } else {
+                        resultado.setText("Selecciona una opción.");
+                    }
+                } catch (NumberFormatException ex) {
+                    resultado.setText("Por favor, ingresa valores válidos.");
+                }
