@@ -22,7 +22,7 @@ for intento in range(1, intentos + 1):
 
     # Comprobar si el número es correcta
     if adivinanza == numero_adivinar:
-        print(f"¡Felicidades! Adivinaste el número en el {intento}.")  # Mensaje de éxito
+        print(f"¡Felicidades! Adivinaste el número en el intento {intento}.")  # Mensaje de éxito
         break  # Salir del bucle si el jugador adivina correctamente
     elif adivinanza < numero_adivinar:
         print("El número a adivinar es mayor.")  # Indicar que el número es menor

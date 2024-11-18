@@ -40,6 +40,7 @@ def operaciones(opcion, numero1, numero2):
 def main():
     print("Bienvenido a la calculadora.")
 
+
     while True:
         #Muestra el menú de opciones llamando a la función menú
         menu()
