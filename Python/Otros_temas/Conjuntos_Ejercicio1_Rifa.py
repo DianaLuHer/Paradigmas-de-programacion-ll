@@ -12,7 +12,7 @@ from datetime import datetime
 participantes = set()
 
 # Nombre del archivo donde se guardarán los ganadores
-ARCHIVO_GANADORES = "archivo_rifa.txt"
+ARCHIVO_RIFA = "archivo_rifa.txt"
 
 # Función para mostrar el menú
 def menu():
@@ -28,14 +28,14 @@ def menu():
 # Función para inicializar el archivo con el encabezado "GANADORES" si no existe
 def inicializar_archivo():
     try:
-        archivo = open(ARCHIVO_GANADORES, "r", encoding="utf-8")
+        archivo = open(ARCHIVO_RIFA, "r", encoding="utf-8")
         contenido = archivo.read()
         archivo.close()
         if not contenido.startswith("GANADORES"):
             raise FileNotFoundError  # Forzamos la reescritura del encabezado si no está
     except FileNotFoundError:
         try:
-            archivo = open(ARCHIVO_GANADORES, "w", encoding="utf-8")
+            archivo = open(ARCHIVO_RIFA, "w", encoding="utf-8")
             archivo.write("********GANADORES********\n")
             archivo.close()
         except Exception as e:
@@ -45,7 +45,7 @@ def inicializar_archivo():
 def registrar_ganador(ganador):
     fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     try:
-        archivo = open(ARCHIVO_GANADORES, "a", encoding="utf-8")
+        archivo = open(ARCHIVO_RIFA, "a", encoding="utf-8")
         archivo.write(f"{fecha_actual} - {ganador}\n")  # Guarda la fecha junto con el ganador
         archivo.close()
         print(f"El ganador '{ganador}' ha sido registrado en el archivo.")
@@ -55,7 +55,7 @@ def registrar_ganador(ganador):
 # Función para leer y mostrar los ganadores desde el archivo
 def mostrar_ganadores():
     try:
-        archivo = open(ARCHIVO_GANADORES, "r", encoding="utf-8")
+        archivo = open(ARCHIVO_RIFA, "r", encoding="utf-8")
         ganadores = archivo.readlines()
         archivo.close()
         if len(ganadores) > 1:  # Comprueba que haya ganadores más allá del encabezado
